@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <style> /*css for designing the page*/
+        sub{color: gray;} /*credits for the recipe, changed color to make it pop out*/
+        .info{ /*text to accompany image*/ 
+                margin: auto; /*for centering*/
+                padding: 15px;} /*adding space to elements*/
+        .info img{ /*image for the recipe*/
+                display: block; /*displays element like a paragraph by starting on a new line*/
+                float: left; /*elements next to this will flow around it*/
+                width: 200px;
+                height: 200px;
+                padding: 15px;}
+        .recipebox{ /*adding the border for the recipe contents*/
+                width: 50%;
+                height: auto;
+                border: 1px solid black; /*adding border to box*/
+                margin: auto;
+                padding: 25px;
+                text-align: left;} /*aligning content text*/
+        .recipe{ /*main text content*/
+                width: 50%;
+                height: auto;
+                margin: auto;
+                padding: 5px;
+                text-align: left;}
+        body{ /*change entire webpage font*/
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
+    </style>
+    <title>My Favorite Recipe</title> <!-- title for the webpage tab-->
+</head>
+<body>
+    <div class="recipebox"> <!--creates a box to nest other content-->
+        <div class="info"> <!--nested div to use separate styling-->
+            <img src="efr.png" alt="Egg Fried Rice"> <!--displaying image-->
+            <h1>Egg Fried Rice</h1> <!--big text-->
+            <p>The Egg Fried Rice is a dish that works best in the early morning after a particularly heavy night of festivity or an abundance of cooked meals. Originating from China, the Egg Fried Rice dish is a popular dish with unique renditions from neighboring countries in Asia -- this recipe being a Filipino-styled variant.</p> <!--text-->
+            <sub>(This recipe is originally from <a href="https://panlasangpinoy.com/egg-fried-rice/">Panlasang Pinoy</a>.)</sub> <!--subscript for crediting original recipe-->
+            <hr> <!--adds horizontal line-->
+        </div>
+        <div class="recipe"> <!--nested div for main content-->
+        <h2>Ingredients</h2> <!--big text-->
+        <ul> <!--unordered list-->
+            <li>1/4 teaspoon of salt</li><!--list items-->
+            <li>1/2 teaspoon of sugar</li>
+            <li>1/2 chopped bell pepper</li>
+            <li>3/4 cup of chopped green onions</li>
+            <li>1 chopped onion</li>
+            <li>1/4 teaspoon of sesame oil</li>
+            <li>2 tablespoons of soy sauce</li>
+            <li>3 chopped sweet peppers</li>
+            <li>4 eggs</li>
+            <li>4 cups of leftover rice</li>
+            <li>4 tablespoons of cooking oil</li>
+        </ul>
+        <h2>How to cook Egg Fried Rice</h2>
+        <ol> <!--ordered list-->
+            <li>Crack the 4 eggs and place in a bowl.</li>
+            <li>Pour all the cooking oil in a wok and heat it. Cook until the sides on the pan turn brown, then flip them over and repeat for the other side.</li>
+            <li>Add the bell peppers and sweet peppers. Sauté them both for 1 minute as you break the eggs apart.</li>
+            <li>Add 2 cups of the leftover rice. Stir fry for 2 minutes.</li>
+            <li>Add the final 2 cups of leftover rice. Continue cooking until all ingredients are well blended.</li>
+            <li>Pour the sesame oil and soy sauce. Continue stir frying for 2 minutes.</li>
+            <li>Season with salt and sugar, and add the green onions. Toss until well blended.</li>
+            <li>Your dish is finished! Transfer to your plates and eat well.</li>
+        </ol>
+        </div> <!--closes recipe div-->
+    </div> <!--closes recipebox div-->
+</body>
+</html>
