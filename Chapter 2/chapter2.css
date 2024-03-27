@@ -3,12 +3,21 @@ body{
     background-color: black;
     color: antiquewhite;
     line-height:25px;
-    margin-bottom:50px;
 }
-div{
+.wrapper{
     margin:auto;
     text-align:center;
     width:50%;}
+.footer{
+    margin:auto;
+    background-color:#111;
+    height:auto;
+    padding: 14px 32px;
+}
+.footer p{
+    font-size: 11px;
+    text-align: center;
+}
 a:link{
     color:goldenrod;}
 a:visited{
@@ -52,12 +61,14 @@ nav {
 }
 .navli a:hover{
     background-color: #333;
+    color:goldenrod;
 }
 p{
     text-indent:10px;}
 .box-wrapper{
     width:75%;
     display:flex;
+    margin:auto;
 }
 .box{
     margin:15px;
@@ -80,15 +91,6 @@ blockquote{
 blockquote p{
     font-size: 20px;
 }
-.column{
-    float:left;
-    width:25%;
-    margin-left:20px;
-    margin-right:20px;
-}
-.column h4{
-    text-decoration: underline;
-}
 .row{
     width:75%;
     margin-left:140px;
@@ -97,6 +99,15 @@ blockquote p{
     content:"";
     display:table;
     clear:both;
+}
+.column{
+    float:left;
+    width:25%;
+    margin-left:20px;
+    margin-right:20px;
+}
+.column h4{
+    text-decoration: underline;
 }
 .brsmall{
     display:block;
@@ -121,4 +132,8 @@ blockquote p{
 .normaltext{
     width:50%;
     margin:auto;
+}
+sub{
+    display: block;
+    text-align: center;
 }
