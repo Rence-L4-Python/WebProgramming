@@ -96,7 +96,8 @@ li{
     text-align: left;
 }
 blockquote{
-    margin-bottom:50px;
+    width:75%;
+    margin: 50px auto auto auto;
 }
 blockquote p{
     font-size: 20px;
@@ -108,7 +109,7 @@ blockquote p{
     margin:auto;
 }
 .column{
-    width:25%;
+    width:400px;
     margin:20px;
 }
 .brsmall{
