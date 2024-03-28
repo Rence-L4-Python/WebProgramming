@@ -10,7 +10,7 @@ body{
     width:50%;}
 .footer{
     margin:auto;
-    background-color:#111;
+    background-color:#151515;
     height:auto;
     padding: 14px 32px;
 }
@@ -41,7 +41,7 @@ h4{
     color:goldenrod;
 }
 nav {
-    background-color:#111;
+    background-color:#151515;
     width:100%;
     height:auto;
     margin:auto;
