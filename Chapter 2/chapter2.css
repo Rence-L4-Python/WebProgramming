@@ -1,142 +1,129 @@
-body{
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: black;
-    color: antiquewhite;
-    line-height:25px;
+body{ /*style for entire page*/
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /*default font of text in page*/
+    background-color: black; /*background color*/
+    color: antiquewhite; /*color of default text in page*/
+    line-height:25px; /*spacing of default text in page*/
 }
-.wrapper{
-    margin:auto;
-    text-align:center;
-    width:50%;}
-.footer{
-    margin:auto;
-    background-color:#151515;
-    height:auto;
-    padding: 14px 32px;
+.wrapper{ /*wrapper for main content*/
+    margin:auto; /*centers content on the page*/
+    text-align:center; /*centers text relative to its position*/
+    width:50%; /*width for the main contents*/
+} 
+.footer{ /*footer for additional important information*/
+    margin:auto; /*centers content on the page*/
+    background-color:#151515; /*footer shape color*/
+    height:auto; /*automatically changing height according to elements inside*/
+    padding: 14px 32px; /*adding spaces around the text*/
 }
-.footer p{
-    font-size: 11px;
-    text-align: center;
+.footer p{ /*styling the text of footer*/
+    font-size: 11px; /*small text size for footer*/
+    text-align: center; /*centering the footer text*/
 }
-.footer a{
+.footer a{ /*styling the links of footer to not have underlines*/
     text-decoration: none;
 }
-a:link{
+a:link{ /*changing color of links*/
     color:goldenrod;}
-a:visited{
+a:visited{ /*changing color of visited links*/
     color:goldenrod;}
-a:hover{
-    color:goldenrod;}
-a:active{
-    color:goldenrod;}
-h1{
+h1{ /*changing font size of heading 1*/
     font-size:60px;}
-h2{
+h2{ /*changing color of heading 2*/
     color:goldenrod;
 }
-h3{
+h3{ /*changing color of heading 3*/
     color:goldenrod;
 }
-h4{
+h4{ /*changing color of heading 4*/
     color:goldenrod;
 }
-nav {
-    background-color:#151515;
-    width:100%;
-    height:auto;
-    margin:auto;
-    position: fixed;
-    top:-10px;
-    z-index: 1;
-    overflow:hidden;
+nav { /*navbar*/
+    background-color:#151515; /*navbar background color*/
+    width:100%; /*width of navbar*/
+    height:auto; /*automatic adjustment of navbar according to elements*/
+    position: fixed; /*fixed position for navbar so it follows when scrolling down*/
+    top:-10px; /*adjusting the navbar's position*/
+    z-index: 1; /*putting the navbar in front to prevent other elements from clipping*/
+    scale:1.02; /*changing scale of navbar*/
 }
 .navbar ol{
-    list-style-type: none;
-    padding-left: 0;
-    text-align: center;
-    margin:10px 10px 0px 0px;
+    padding-left: 0; /*helps in centering the text*/
+    text-align: center; /*centers text*/
+    margin: 10px 10px 0px 0px; /*size of navbar*/
 }
 .navli{
-    display: inline-block;
-    margin-left: 25px;
-    margin-right: 25px;
+    display: inline-block; /*horizontal placement for links in navbar*/
+    margin-left: 25px; /*spacing between section links*/ 
+    margin-right: 25px; /*spacing between section links*/
 }
 .navli a{
-    display:block;
-    color:antiquewhite;
-    text-align: center;
-    padding: 14px 32px;
-    text-decoration: none;
+    display: block; /*making the navbar thick*/
+    color:antiquewhite; /*font color of links in navbar*/
+    padding: 14px 32px; /*adding space around text*/
+    text-decoration: none; /*removing underlines for links*/
 }
 .navli a:hover{
-    background-color: #333;
-    color:goldenrod;
+    background-color: #333; /*changes background color of link when hovered*/
+    color:goldenrod; /*changes font color of link when hovered*/
 }
 p{
-    text-indent:10px;}
+    text-indent:10px;} /*adding indentation to all paragraph texts*/
 .box-wrapper{
-    width:75%;
-    display:flex;
-    justify-content: center;
-    margin:auto;
+    width:75%; /*width for box container*/
+    display:flex; /*displaying boxes horizontally*/
+    margin:auto; /*centering boxes*/
 }
 .box{
-    margin:15px;
-    width:400px;
-    height:auto;
+    margin:15px; /*space between each box*/
+    width:400px; /*width for boxes*/
+    height:auto; /*automatic height adjustment according to elements inside*/
 }
 hr{
-    opacity: 80%;
+    opacity: 80%; /*changed opacity for horizontal rule*/
 }
 hr.creds{
-    height:80px;
-    opacity: 40%;
+    height:80px; /*changed length for horizontal rule*/
+    opacity: 40%; /*changed opacity for horizontal rule*/
 }
 li{
-    text-align: left;
+    text-align: left; /*changing text alignment for the list description*/
 }
 blockquote{
-    width:75%;
-    margin: 50px auto auto auto;
+    width:75%; /*width for blockquote*/
+    margin: 50px auto auto auto; /*spacing for each blockquote*/
 }
 blockquote p{
-    font-size: 20px;
+    font-size: 20px; /*font size for blockquote paragraph text*/
 }
 .row{
-    width:75%;
-    display:flex;
-    justify-content: center;
-    margin:auto;
+    width:75%; /*width for each character info*/
+    display:flex; /*displaying character info into columns horizontally*/
+    margin:auto; /*centering text in page*/
 }
 .column{
-    width:400px;
-    margin:20px;
+    width:400px; /*width for each column*/
+    margin:20px; /*spacing between each column*/
 }
 .brsmall{
-    display:block;
-    margin-bottom:50px;
+    display:block; /*displaying to add space*/
+    margin-bottom:50px; /*adding space below*/
 }
 .brmedium{
-    display:block;
-    margin-bottom:100px;
+    display:block; /*displaying to add space*/
+    margin-bottom:100px; /*adding space below*/
 }
 .brlarge{
-    display:block;
-    margin-bottom:175px;
-}
+    display:block; /*displaying to add space*/
+    margin-bottom:175px; /*adding space below*/
+} 
 .bigtext{
-    font-weight: bold;
-    font-size:36px;
-    width:75%;
-    height:auto;
-    margin:auto;
-    line-height:50px;
+    font-weight: bold; /*changing font appearance*/
+    font-size:36px; /*big text font size*/
+    width:75%; /*width for big text*/
+    margin:auto; /*centering text in page*/
+    line-height:50px; /*adding spaces between lines of the bigtext*/
 }
 .normaltext{
-    width:50%;
-    margin:auto;
-}
-sub{
-    display: block;
-    text-align: center;
+    width:50%; /*width for normal text*/
+    margin:auto; /*centering text in page*/
 }
