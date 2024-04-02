@@ -1,72 +1,123 @@
-<!DOCTYPE html>
-<html>
-<head> 
-    <style> /*css for designing the page*/
-        sub{color: gray;} /*credits for the recipe, changed color to make it pop out*/
-        .info{ /*text to accompany image*/ 
-                margin: auto; /*for centering*/
-                padding: 15px;} /*adding space to elements*/
-        .info img{ /*image for the recipe*/
-                display: block; /*displays element like a paragraph by starting on a new line*/
-                float: left; /*elements next to this will flow around it*/
-                width: 200px;
-                height: 200px;
-                padding: 15px;}
-        .recipebox{ /*adding the border for the recipe contents*/
-                width: 50%;
-                height: auto;
-                border: 1px solid black; /*adding border to box*/
-                margin: auto;
-                padding: 25px;
-                background-color: lightgoldenrodyellow;
-                text-align: left;} /*aligning content text*/
-        .recipe{ /*main text content*/
-                width: 50%;
-                height: auto;
-                margin: auto;
-                padding: 5px;
-                text-align: left;}
-        body{ /*change entire webpage font*/
-                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
-    </style>
-    <title>My Favorite Recipe</title> <!-- title for the webpage tab-->
-</head>
-<body>
-    <div class="recipebox"> <!--creates a box to nest other content-->
-        <div class="info"> <!--nested div to use separate styling-->
-            <img src="efr.png" alt="Egg Fried Rice"> <!--displaying image-->
-            <h1>Egg Fried Rice</h1> <!--big text-->
-            <p>The Egg Fried Rice is a dish that works best in the early morning after a particularly heavy night of festivity or an abundance of cooked meals. Originating from China, the Egg Fried Rice dish is a popular dish with unique renditions from neighboring countries in Asia -- this recipe being a Filipino-styled variant.</p> <!--text-->
-            <sub>(This recipe is originally from <a href="https://panlasangpinoy.com/egg-fried-rice/">Panlasang Pinoy</a>.)</sub> <!--subscript for crediting original recipe-->
-            <hr> <!--adds horizontal line-->
+<!DOCTYPE html> <!--type of document-->
+<html> <!--html tag-->
+    <head> <!--container for styling elements-->
+        <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Sofia&display=swap" rel="stylesheet"> <!--link to use fonts from online sources-->
+        <style> /*css for designing the page*/
+            body{ 
+                background-image: url('pastel.png'); /*whole page background*/
+                font-family: "Handlee", cursive; /*the main font for the whole page*/
+                height: 1120px; /*spacing for the page*/
+            }
+            .boardbase{ /*clipboard art idea, this is the 'wood' base*/
+                display: flex; /*used so the other divs can be arranged to a clipboard shape*/
+                justify-content: center; /*centers the shape*/
+                background-color: peru; /*color of shape*/
+                width: 750px; /*width of shape*/
+                height: 1080px; /*height of shape*/
+                margin: auto; /*centers the clipboard shape*/
+                margin-top: 50px; /*spacing for top of page*/
+                border-radius: 15px; /*roundedness of the corners of the 'wood' shape*/
+                box-shadow: 4px 8px 8px #222; /*shadow to make the shape pop out*/
+            }
+            .boardclip{ /*clipboard metal part, only for shape art*/
+                background-color: darkgray; /*color of metal shape*/
+                width: 350px; /*width of metal shape*/
+                height: 100px; /*height of metal shape*/
+                position: absolute; /*places at a certain part of the page, and does not wrap with other elements*/
+                top: 30px; /*location of the shape*/
+            }
+            .boardpaper{
+                display: flex; /*used to center other divs*/
+                justify-content: center; /*used to center other divs*/
+                background-color: antiquewhite; /*color of clipboard 'paper'*/
+                width: 720px; /*width of clipboard 'paper'*/
+                height: 1010px; /*height of clipboard 'paper'*/
+                overflow: hidden; /*crops the images inside the boardpaper according to their width and height*/
+                margin-top: 50px; /*space of the shape based on the 'wood' base*/
+            }
+            .section1{
+                display: inline; /*chosen to allow for spacing instead of wrapping*/
+                text-align: center; /*centers content, allowed because inline display makes the element like text*/
+            }
+            .section1 img{
+                height: 250px; /*height of cropped image*/
+                width: 250px; /*width of cropped image*/
+                scale: 75%; /*scale of image*/
+            }
+            .section2{
+                display: flex; /*chosen to arrange the text lists horizontally instead of vertically*/
+                text-align: left; /*alignment of the main text of the lists*/
+            }
+            h1{
+                display: inline-block; /*needed to center the text properly*/
+                justify-content: center; /*centers the text*/
+                margin-top: 50px; /*space of the shape based on the clipboard 'paper'*/
+                height: 80px; /*mostly for the height of the background color*/
+                width: 650px; /*mostly for the width of the background color*/
+                font-size: 48px; /*big font size*/
+                background-color: #222; /*background color for the text*/
+                color: white; /*text color*/
+                padding: 10px; /*spacing for the text and its background color*/
+                font-family: "Sofia", cursive; /*online font from google*/
+            }
+            h2{
+                text-align: center; /*center alignment*/
+            }
+            .textbox1{
+                display: block; /*chosen for alignment purposes*/
+                margin: 25px; /*pushes the text inwards according to this design*/
+                width: 300px; /*width of text box*/
+            }
+            .textbox2{
+                display: block; /*chosen for alignment purposes*/
+                margin: 25px; /*pushes the text inwards according to this design*/
+                width: 300px; /*width of text box*/
+            }
+        </style>
+        <title> <!--browser tab title-->
+            My Favorite Recipe
+        </title>
+    </head>
+    <body> <!--building the page-->
+        <div class="boardbase"> <!--div container-->
+            <div class="boardclip"></div> <!--shape only for design-->
+            <div class="boardpaper"> <!--div container for other elements-->
+                <div class="section1"> <!--making a block to hold other elements and work with the other section-->
+                    <h1>Egg Fried Rice</h1> <!--heading tag-->
+                    <img src="efr.png"> <!--image in folder-->
+                    <hr> <!--horizontal rule tag-->
+                <div class="section2"> <!--making a block to hold other elements and work with the other section-->
+                    <div class="textbox1"> <!--div inside the section-->
+                        <h2>Ingredients</h2>
+                        <ul> <!--unordered list-->
+                            <li>1/4 teaspoon of salt</li><!--list items-->
+                            <li>1/2 teaspoon of sugar</li>
+                            <li>1/2 chopped bell pepper</li>
+                            <li>3/4 cup of chopped green onions</li>
+                            <li>1 chopped onion</li>
+                            <li>1/4 teaspoon of sesame oil</li>
+                            <li>2 tablespoons of soy sauce</li>
+                            <li>3 chopped sweet peppers</li>
+                            <li>4 eggs</li>
+                            <li>4 cups of leftover rice</li>
+                            <li>4 tablespoons of cooking oil</li>
+                        </ul>
+                    </div>
+                    <div class="textbox2"> <!--div inside the section-->
+                        <h2>Preparation</h2>
+                        <ol> <!--ordered list-->
+                            <li>Crack the 4 eggs and place in a bowl.</li><!--list items-->
+                            <li>Pour all the cooking oil in a wok and heat it. Cook until the sides on the pan turn brown, then flip them over and repeat for the other side.</li>
+                            <li>Add the bell peppers and sweet peppers. Sauté them both for 1 minute as you break the eggs apart.</li>
+                            <li>Add 2 cups of the leftover rice. Stir fry for 2 minutes.</li>
+                            <li>Add the final 2 cups of leftover rice. Continue cooking until all ingredients are well blended.</li>
+                            <li>Pour the sesame oil and soy sauce. Continue stir frying for 2 minutes.</li>
+                            <li>Season with salt and sugar, and add the green onions. Toss until well blended.</li>
+                            <li>Your dish is finished! Transfer to your plates and eat well.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="recipe"> <!--nested div for main content-->
-        <h2>Ingredients</h2> <!--big text-->
-        <ul> <!--unordered list-->
-            <li>1/4 teaspoon of salt</li><!--list items-->
-            <li>1/2 teaspoon of sugar</li>
-            <li>1/2 chopped bell pepper</li>
-            <li>3/4 cup of chopped green onions</li>
-            <li>1 chopped onion</li>
-            <li>1/4 teaspoon of sesame oil</li>
-            <li>2 tablespoons of soy sauce</li>
-            <li>3 chopped sweet peppers</li>
-            <li>4 eggs</li>
-            <li>4 cups of leftover rice</li>
-            <li>4 tablespoons of cooking oil</li>
-        </ul>
-        <h2>How to cook Egg Fried Rice</h2>
-        <ol> <!--ordered list-->
-            <li>Crack the 4 eggs and place in a bowl.</li>
-            <li>Pour all the cooking oil in a wok and heat it. Cook until the sides on the pan turn brown, then flip them over and repeat for the other side.</li>
-            <li>Add the bell peppers and sweet peppers. Sauté them both for 1 minute as you break the eggs apart.</li>
-            <li>Add 2 cups of the leftover rice. Stir fry for 2 minutes.</li>
-            <li>Add the final 2 cups of leftover rice. Continue cooking until all ingredients are well blended.</li>
-            <li>Pour the sesame oil and soy sauce. Continue stir frying for 2 minutes.</li>
-            <li>Season with salt and sugar, and add the green onions. Toss until well blended.</li>
-            <li>Your dish is finished! Transfer to your plates and eat well.</li>
-        </ol>
-        </div> <!--closes recipe div-->
-    </div> <!--closes recipebox div-->
-</body>
+    </body>
 </html>
