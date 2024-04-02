@@ -5,30 +5,57 @@
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap" rel="stylesheet">
         <style>
             .header{
-                background-color: antiquewhite;
-                padding: 25px;
-                height: auto;
-                float: top;
-                display: block;
+                display: inline-block;
+                height: 165px;
+                width: 100%;
+                background-color: navy;
                 text-align: center;
             }
             .header a{
-                font-size:16px;
-                font-family: "Prata", serif;
-                display:block;
-                margin-top: auto;
+                display: inline-block;
+                margin-top: 20px;
+                margin: 20px;
                 justify-content: center;
                 text-decoration: none;
-                padding:10px;
+                padding: 10px;
+                font-size: 18px;
+                font-family: "Prata", serif;
+                font-weight: 600;
+                color: white;
+                transition: 0.15s;
             }
             .header a:hover{
-                background-color:rgba(233, 150, 122, 0.212);
+                background-color: darkgreen;
+                transform: scale(1.05);
+                border-radius: 10px;
+            }
+            .headerlinks{
+                background-color: green;
+                margin:0;
+                padding:0;
             }
             body{
                 background-color:rgba(250, 235, 215, 0.289);
+                margin: 0;
+                padding: 0;
+            }
+            body::after {
+                content: "";
+                background-image: url(https://wallpaperaccess.com/full/2074986.jpg);
+                height: 100%;
+                background-position: center;
+                background-size: cover;
+                opacity: 0.8;
+                filter: blur(3px);
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                position: absolute;
+                z-index: -1;  
             }
             .card-wrapper{
-                display:flex;
+                display: flex;
                 justify-content: center;
                 flex-wrap: wrap;
             }
@@ -40,8 +67,15 @@
                 overflow: hidden;
                 box-shadow: 2px 4px 6px #00000050;
                 margin: 20px;
-                margin-top: 100px;
+                margin-top: 120px;
                 margin-bottom: 100px;
+                transition: 0.15s;
+            }
+            .card:hover{
+                transform: scale(1.05);
+            }
+            .card a{
+                font-weight: 600;
             }
             .card h2{
                 display: block;
@@ -53,8 +87,11 @@
             .card img{
                 width: 400px;
                 height: 300px;
-                filter:saturate(130%);
-                filter:contrast(115%);
+                filter: blur(0.5px);
+            }
+            .card img:hover{
+                filter: saturate(130%);
+                filter: contrast(115%);
             }
             .card p{
                 padding: 15px;
@@ -63,13 +100,14 @@
             }
             h1{
                 font-family: "Prata", serif;
+                color: white;
             }
             hr{
                 width: 90%;
             }
             .cardbutton{
                 font-family: "Lato", sans-serif;
-                background-color:green;
+                background-color: green;
                 padding: 20px;
                 display: block;
                 text-align: center;
@@ -80,14 +118,14 @@
                 background-color: darkgreen;
             }
             sub{
-                color:gray;
-                padding:15px;
+                color: gray;
+                padding: 15px;
                 text-align: center;
-                margin:auto;
+                margin: auto;
                 font-size: 11px;
-                display:block;
+                display: block;
                 justify-content: center;
-                height:25px;
+                height: 25px;
             }
         </style>
         <title>Traveler's Guide to Cebu</title>
@@ -95,10 +133,14 @@
     <body>
         <div class="header">
             <h1>Traveler's Guide to Cebu</h1>
-            <hr>
+            <div class="headerlinks">
             <a href="https://www.google.com">> Home</a>
-            <a href="https://www.google.com">> Blogs</a>
-            <a href="https://www.google.com">> Contact Us</a>
+            <a href="https://www.google.com">> Destinations</a>
+            <a href="https://www.google.com">> Travel Advice</a>
+            <a href="https://www.google.com">> Reviews</a>
+            <a href="https://www.google.com">> Contact us</a>
+            <a href="https://www.google.com">> About us</a>
+            </div>
         </div>
         <div class="card-wrapper">
             <div class="card">
@@ -126,5 +168,6 @@
                 <a class ="cardbutton" href="https://www.google.com">READ MORE</a>
             </div>
         </div>
+        <div class="footer"></div>
     </body>
 </html>
