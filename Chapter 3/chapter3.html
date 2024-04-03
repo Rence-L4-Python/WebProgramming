@@ -1,140 +1,133 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> <!--using online fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap" rel="stylesheet"> <!--using online fonts-->
         <style>
             .header{
-                display: inline-block;
-                height: 165px;
-                width: 100%;
-                background-color: navy;
-                text-align: center;
+                display: inline-block; /*creating a block to make the element fit/stick to the top of page*/
+                height: 165px; /*height of header*/
+                width: 100%; /*width of header*/
+                background-color: navy; /*color of header*/
+                text-align: center; /*centers text on page because it is displayed as inline*/
             }
             .header a{
-                display: inline-block;
-                margin-top: 20px;
-                margin: 20px;
-                justify-content: center;
-                text-decoration: none;
-                padding: 10px;
-                font-size: 18px;
-                font-family: "Prata", serif;
-                font-weight: 600;
-                color: white;
-                transition: 0.15s;
+                display: inline-block; /*arranges the links horizontally*/
+                margin: 20px; /*makes the header appear bigger and gives spacing between links*/
+                text-decoration: none; /*removes the underlines from links*/
+                padding: 10px; /*affects size of the links as well as its hover background color*/
+                font-size: 18px; /*size of the text*/
+                font-family: "Prata", serif; /*font family of the text using online fonts*/
+                font-weight: 600; /*thickness or type of the text*/
+                color: white; /*color of the text*/
+                transition: 0.15s; /*speed of transform animations*/
             }
             .header a:hover{
-                background-color: darkgreen;
-                transform: scale(1.05);
-                border-radius: 10px;
+                background-color: darkgreen; /*changes background color on hovering header links*/
+                transform: scale(1.05); /*changes size of header links on hover*/
+                border-radius: 10px; /*roundedness of the hovered background*/
             }
             .headerlinks{
-                background-color: green;
-                margin:0;
-                padding:0;
+                background-color: green; /*separate div to change the color of the header links*/
             }
             body{
-                background-color:rgba(250, 235, 215, 0.289);
-                margin: 0;
-                padding: 0;
+                background-color:rgba(250, 235, 215, 0.289); /*temporary color for the background prior to background image*/
+                margin: 0; /*removes default browser margin*/ 
+                padding: 0; /*removes default browser padding*/
             }
-            body::after {
-                content: "";
-                background-image: url(https://wallpaperaccess.com/full/2074986.jpg);
-                height: 100%;
-                background-position: center;
-                background-size: cover;
-                opacity: 0.8;
-                filter: blur(3px);
-                top: 0;
-                left: 0;
-                bottom: 0;
-                right: 0;
-                position: absolute;
-                z-index: -1;  
+            body::after { /*pseudo element to add filters to background image*/
+                content: ""; /*define pseudo element*/
+                background-image: url(https://wallpaperaccess.com/full/2074986.jpg); /*to be used as background image*/
+                height: 100%; /*height of background image*/
+                background-position: center; /*position of background image*/
+                background-size: cover; /*covers 1920x1080 screen*/
+                opacity: 0.8; /*change opacity of image*/
+                filter: blur(3px); /*blur filter for bg image*/
+                top: 0; /*position of image*/
+                left: 0; /*position of image*/
+                bottom: 0; /*position of image*/
+                right: 0; /*position of image*/
+                position: absolute; /*to position image using the top,left,bottom,right*/
+                z-index: -1; /*putting the image as the background in order*/
             }
             .card-wrapper{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
+                display: flex; /*wrapper to contain the three cards*/
+                justify-content: center; /*centers the three cards*/
+                flex-wrap: wrap; /*rearranges the cards depending on viewport size*/
             }
             .card{
-                width: 400px;
-                height: auto;
-                background-color: white;
-                border-radius: 4px;
-                overflow: hidden;
-                box-shadow: 2px 4px 6px #00000050;
-                margin: 20px;
-                margin-top: 120px;
-                margin-bottom: 100px;
-                transition: 0.15s;
+                width: 400px; /*width of the cards*/ 
+                height: auto; /*automatic height adjustment for the cards*/
+                background-color: white; /*background color for the base of the cards*/
+                border-radius: 4px; /*roundedness of the edges of the cards*/
+                overflow: hidden; /*to crop the image inside the card according to its width and height*/
+                box-shadow: 2px 4px 6px #00000050; /*shadow behind card*/
+                margin: 20px; /*spacing between each card*/
+                margin-top: 120px; /*spacing above the cards*/
+                margin-bottom: 100px; /*spacing below the cards*/
+                transition: 0.15s; /*speed of transform animations*/
             }
             .card:hover{
-                transform: scale(1.05);
+                transform: scale(1.05); /*changes size of header links on hover*/
             }
             .card a{
-                font-weight: 600;
+                font-weight: 600; /*thickness or type of the text*/
             }
             .card h2{
-                display: block;
-                text-align: center;
-                font-family: "Lato", sans-serif;
-                font-weight: 700;
-                font-size: 24px;
+                display: block; /*aligns the best out of the other options*/
+                text-align: center; /*centers the text on the card*/
+                font-family: "Lato", sans-serif; /*font family of the text using online fonts*/
+                font-weight: 700; /*thickness or type of the text*/
+                font-size: 24px; /*size of the text*/
             }
             .card img{
-                width: 400px;
-                height: 300px;
-                filter: blur(0.5px);
+                width: 400px; /*cropped width of the card image*/
+                height: 300px; /*cropped height of the card image*/
+                filter: blur(0.5px); /*blurs the image, does not apply when hovered*/
             }
             .card img:hover{
-                filter: saturate(130%);
-                filter: contrast(115%);
+                filter: saturate(130%); /*saturates the image on hover*/
+                filter: contrast(115%); /*changes contrast of image on hover*/
             }
             .card p{
-                padding: 15px;
-                margin: auto;
-                font-family: "Lato", sans-serif;
+                padding: 15px; /*spacing around the paragraph text*/
+                font-family: "Lato", sans-serif; /*font family of the text using online fonts*/
             }
             h1{
-                font-family: "Prata", serif;
-                color: white;
+                font-family: "Prata", serif; /*font family of the text using online fonts*/
+                color: white; /*color of the text*/
             }
             hr{
-                width: 90%;
+                width: 90%; /*width of the horizontal rule*/
             }
             .cardbutton{
-                font-family: "Lato", sans-serif;
-                background-color: green;
-                padding: 20px;
-                display: block;
-                text-align: center;
-                color: white;
-                text-decoration: none;
+                font-family: "Lato", sans-serif; /*font family of the text using online fonts*/
+                background-color: green; /*background color of the card buttons*/
+                padding: 20px; /*spacing around the card button text*/
+                display: block; /*displays as a block to fit the card's bottom*/
+                text-align: center; /*aligns text to center of card*/
+                color: white; /*color of the text*/
+                text-decoration: none; /*removes the underlines from links*/
             }
             .cardbutton:hover{
-                background-color: darkgreen;
+                background-color: darkgreen; /*changes background color on hovering card button links*/
             }
-            sub{
-                color: gray;
-                padding: 15px;
-                text-align: center;
-                margin: auto;
-                font-size: 11px;
-                display: block;
-                justify-content: center;
-                height: 25px;
+            sub{ /*for attribution of images*/
+                color: gray; /*color of the text*/
+                padding: 15px; /*spacing around the sub text*/
+                text-align: center; /*centers the text on the card*/
+                font-size: 11px; /*size of the sub text*/
+                display: block; /*fits the best for alignment*/
+                height: 25px; /*height of the text*/
             }
         </style>
         <title>Traveler's Guide to Cebu</title>
     </head>
     <body>
-        <div class="header">
+        <div class="header"> <!--parent div and color-->
             <h1>Traveler's Guide to Cebu</h1>
-            <div class="headerlinks">
-            <a href="https://www.google.com">> Home</a>
+            <div class="headerlinks"> <!--separate div for color and links-->
+            <a href="https://www.google.com">> Home</a> <!--concept links, only leads to google-->
             <a href="https://www.google.com">> Destinations</a>
             <a href="https://www.google.com">> Travel Advice</a>
             <a href="https://www.google.com">> Reviews</a>
@@ -142,32 +135,31 @@
             <a href="https://www.google.com">> About us</a>
             </div>
         </div>
-        <div class="card-wrapper">
-            <div class="card">
-                <img src="cebu1.jpg" alt="Bird-eye view of a shore in Cebu" title="A drone shot of a shore in Cebu">
-                <sub>Tirachard Kumtanom, "Aerial View of a Shore and Body of Water", 2017, <a href="https://www.pexels.com/photo/aerial-view-of-a-shore-and-body-of-water-584302/">Pexels</a></sub>
-                <h2>Queen City of the South</h2>
-                <hr>
-                <p>Known as the richest province in the Philippines, Cebu City is a center of economic and commercial activities in the Central Visayas region of the Philippines...</p>
-                <a class ="cardbutton" href="https://www.google.com">READ MORE</a>
+        <div class="card-wrapper"> <!--container for the cards-->
+            <div class="card"> <!--card 1-->
+                <img src="cebu1.jpg" alt="Bird-eye view of a shore in Cebu" title="A drone shot of a shore in Cebu"> <!--html image tag-->
+                <sub>Tirachard Kumtanom, "Aerial View of a Shore and Body of Water", 2017, <a href="https://www.pexels.com/photo/aerial-view-of-a-shore-and-body-of-water-584302/">Pexels</a></sub> <!--attribution of images-->
+                <h2>Queen City of the South</h2> <!--heading 2 to emphasize text-->
+                <hr> <!--horizontal rule-->
+                <p>Known as the richest province in the Philippines, Cebu City is a center of economic and commercial activities in the Central Visayas region of the Philippines...</p> <!--text for the card-->
+                <a class ="cardbutton" href="https://www.google.com">READ MORE</a> <!--concept links, only leads to google-->
             </div>
-            <div class="card">
+            <div class="card"> <!--card 2-->
                 <img src="cebu2.jpg" alt="Women dancing for the Sinulog Festival Parade" title="Sinulog Festival Parade">
-                <sub>Rodney Ee, "One of the festival queens leads the contingent at the Sinulog Grand Parade 2017 in Cebu City, Philippines.", 2017, <a href="https://www.dreamstime.com/editorial-image-sinulog-grand-parade-one-festival-queens-leads-contingent-cebu-city-philippines-image84420970">Dreamstime</a></sub>
-                <h2>Local Festivities</h2>
-                <hr>
-                <p>The festival of Sinulog largely commemorates the acceptance of Christianity in the Philippines, converting Filipinos from their pagan beliefs to Roman Catholicism...</p>
-                <a class ="cardbutton" href="https://www.google.com">READ MORE</a>
+                <sub>Rodney Ee, "One of the festival queens leads the contingent at the Sinulog Grand Parade 2017 in Cebu City, Philippines.", 2017, <a href="https://www.dreamstime.com/editorial-image-sinulog-grand-parade-one-festival-queens-leads-contingent-cebu-city-philippines-image84420970">Dreamstime</a></sub> <!--attribution of images-->
+                <h2>Local Festivities</h2> <!--heading 2 to emphasize text-->
+                <hr> <!--horizontal rule-->
+                <p>The festival of Sinulog largely commemorates the acceptance of Christianity in the Philippines, converting Filipinos from their pagan beliefs to Roman Catholicism...</p> <!--text for the card-->
+                <a class ="cardbutton" href="https://www.google.com">READ MORE</a> <!--concept links, only leads to google-->
             </div>
-            <div class="card">
+            <div class="card"> <!--card 3-->
                 <img src="cebu3.jpg" alt="Photo of a whale shark underwater in Oslob, Cebu" title="Whale shark watching in Oslob, Cebu">
                 <sub>Elgin Renz Rocili, "Whale Shark in Water", 2020, <a href="https://www.pexels.com/photo/whale-shark-in-water-6530409/">Pexels</a></sub>
-                <h2>Things to do in Cebu</h2>
-                <hr>
-                <p>From eating at <i>carinderias</i> to <i>pungko pungko-ans</i>, to visiting historical landmarks such as the Magellan's Cross at Santo Niño Basilica, to swimming with whale sharks in Oslob...</p>
-                <a class ="cardbutton" href="https://www.google.com">READ MORE</a>
+                <h2>Things to do in Cebu</h2> <!--heading 2 to emphasize text-->
+                <hr> <!--horizontal rule-->
+                <p>From eating at <i>carinderias</i> to <i>pungko pungko-ans</i>, to visiting historical landmarks such as the Magellan's Cross at Santo Niño Basilica, to swimming with whale sharks in Oslob...</p> <!--text for the card-->
+                <a class ="cardbutton" href="https://www.google.com">READ MORE</a> <!--concept links, only leads to google-->
             </div>
         </div>
-        <div class="footer"></div>
     </body>
 </html>
