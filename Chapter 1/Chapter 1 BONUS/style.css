@@ -1,0 +1,92 @@
+body{
+    background-color: black;
+    font-family: "Nunito", sans-serif;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.cardcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.card{
+    border: 2px solid greenyellow;
+    border-radius: 15px;
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: auto;
+    width: 500px;
+    overflow: hidden;
+}
+.card h2{
+    background-color: greenyellow;
+    display: block;
+    color: black;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+.card h3{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.card p{
+    color: white;
+    padding: 20px;
+}
+.card pre{
+    color: white;
+    padding: 20px;
+}
+.card code{
+    color: white;
+}
+.card pre code{
+    background-color: #333;
+    display: block;
+    padding: 20px;
+}
+.card pre code p{
+    display: inline;
+    color: green;
+    margin: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+.card:nth-child(2) pre code p{
+    display: inline;
+    color: goldenrod;
+    margin: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+.card pre code sub{
+    display: inline;
+    color: goldenrod;
+    margin: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+.card:nth-child(2) pre code sub{
+    display: inline;
+    color:skyblue;
+    vertical-align: baseline;
+    margin: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: bold;
+}
