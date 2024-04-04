@@ -3,13 +3,21 @@ body{ /*style for entire page*/
     background-color: black; /*background color*/
     color: antiquewhite; /*color of default text in page*/
     line-height:25px; /*spacing of default text in page*/
+    width:100%; /*width of page*/
+    margin: auto; /*centers contents*/
 }
 .wrapper{ /*wrapper for main content*/
     margin:auto; /*centers content on the page*/
     text-align:center; /*centers text relative to its position*/
-    width:50%; /*width for the main contents*/
+    width:100%; /*width for the main contents*/
+    margin-bottom: 250px;
 } 
 .footer{ /*footer for additional important information*/
+    position: fixed; /*fixed position for footer so it follows when scrolling down*/
+    left: 0; /*adjusting footer's position*/
+    right: 0;
+    bottom: 0;
+    z-index: 10; /*order of footer in page*/
     margin:auto; /*centers content on the page*/
     background-color:#151515; /*footer shape color*/
     height:auto; /*automatically changing height according to elements inside*/
@@ -27,9 +35,13 @@ a:link{ /*changing color of links*/
 a:visited{ /*changing color of visited links*/
     color:goldenrod;}
 h1{ /*changing font size of heading 1*/
-    font-size:60px;}
+    font-size:90px;
+    margin-top: 400px;
+}
 h2{ /*changing color of heading 2*/
+    font-size: 48px;
     color:goldenrod;
+    margin-top: 150px;
 }
 h3{ /*changing color of heading 3*/
     color:goldenrod;
@@ -43,6 +55,7 @@ nav { /*navbar*/
     height:auto; /*automatic adjustment of navbar according to elements*/
     position: fixed; /*fixed position for navbar so it follows when scrolling down*/
     top:-10px; /*adjusting the navbar's position*/
+    left: 0;
     z-index: 1; /*putting the navbar in front to prevent other elements from clipping*/
     scale:1.02; /*changing scale of navbar*/
 }
@@ -98,8 +111,9 @@ blockquote p{
 .row{
     width:75%; /*width for each character info*/
     display:flex; /*displaying character info into columns horizontally*/
-    justify-content: center; /*centers text*/
+    justify-content: center;
     margin:auto; /*centering text in page*/
+    margin-bottom: 250px;
 }
 .column{
     width:400px; /*width for each column*/
