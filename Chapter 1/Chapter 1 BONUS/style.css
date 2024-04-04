@@ -3,8 +3,33 @@ body{
     font-family: "Nunito", sans-serif;
 }
 .wrapper{
-    display: flex;
-    justify-content: center;
+    display: block;
+}
+.header{
+    text-align: center;
+}
+.header a{
+    display: inline-block;
+    text-align: center;
+    color: goldenrod;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    font-weight: 800;
+    border-radius: 15px;
+    position: relative;
+    right: 5px;
+    transition: 0.15s;
+}
+.header a:hover{
+    background-color: yellowgreen;
+    color: black;
+    transform: scale(1.05);
+}
+.header h4, h5{
+    color: white;
 }
 .cardcontainer{
     display: flex;
@@ -49,6 +74,7 @@ body{
     background-color: #333;
     display: block;
     padding: 20px;
+    overflow: hidden;
 }
 .card pre code p{
     display: inline;
@@ -88,5 +114,5 @@ h1{
     text-align: center;
     margin-top: 50px;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 800;
 }
