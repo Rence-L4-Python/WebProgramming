@@ -10,7 +10,7 @@ body{
 }
 body::after { 
     content: ""; 
-    background-image: url(bg.PNG);
+    background-image: url("media/bg.PNG");
     height: 100%;
     background-position: center; 
     background-size: cover;
