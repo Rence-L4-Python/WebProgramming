@@ -1,8 +1,8 @@
-*{
+*{ /*removes default margins and paddings*/
     margin: 0;
     padding: 0;
 }
-.btn{
+.btn{ /*styling for the "Read More" button in first container*/
     display: flex;
 }
 .btn > a{
@@ -16,7 +16,7 @@
 .btn > a:hover{
     background-color: darkgreen;
 }
-.container{
+.container{ /*styling for the two containers*/
     background-color: whitesmoke;
     border: 0.1rem solid dimgray;
     border-radius: 1rem;
@@ -49,7 +49,7 @@
 .container > ul > li > a{
     text-decoration: none;
 }
-.container:nth-child(1){
+.container:nth-child(1){ /*styles the first container*/
     border-radius: 1rem 4rem 1rem 1rem;
 }
 .container:nth-child(1) > p{
@@ -71,14 +71,14 @@
     object-fit: cover;
     box-shadow: 0 0 0.2rem black;
 }
-.home a{
+.home a{ /*different class to style the individual list item*/
     color: red;
     font-weight: 900;
 }
 .home a:hover{
     color: darkred;
 }
-body{
+body{ /*styling for body*/ 
     background-color: midnightblue;
     background-image: url("media/bg.jpg");
     background-size: cover;
@@ -91,7 +91,7 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
 }
-footer{
+footer{ /*styling for footer*/
     background-color: black;
     color: white;
     display: block;
@@ -100,18 +100,18 @@ footer{
     text-align: center;
     top: 100vh;
 }
-h1{
+h1{ /*styling for headings for emphasis*/
     color: white;
     font-family: "Teko", sans-serif;
     font-size: 2rem;
     font-weight: 900;
 }
-h2{
+h2{ 
     color: navy;
     margin-bottom: 1rem;
     font-size: 1.75rem;
 }
-header{
+header{ /*styling for header for navigation and information*/
     align-items: center;
     background-color: black;
     display: flex;
@@ -145,19 +145,19 @@ header > nav li > a{
 header > nav li > a:hover{
     color: dimgray;
 }
-hr{
+hr{ /*for decoration, this is the vertical line before "Canada"*/
     align-items: center;
     height: 2rem;
     margin: 2rem;
 }
-main{
+main{ /*styling container for main content*/
     align-items: center;
     display: flex;
     justify-content: center;
     margin: 2rem;
     margin-bottom: 4rem;
 }
-.openingtext{
+.openingtext{ /*styling "welcome text"*/
     display: block;
     margin-top: 4rem;
     text-align: center;
@@ -167,7 +167,7 @@ main{
     font-style: italic;
     font-weight: 900;
     letter-spacing: 0.4rem;
-}
+} /*styles the first letter of the element with .openingtext class*/
 .openingtext::first-letter{
     font-size: 5rem;
 }
