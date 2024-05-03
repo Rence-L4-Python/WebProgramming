@@ -1,0 +1,157 @@
+/*targeting everything in the document*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/*body styling*/
+body{
+    max-width: 100vw; /*max width and min height to make the footer stick to the bottom*/
+    min-height: 100vh;
+    font-family: "Nunito", sans-serif;
+    background-color: whitesmoke;
+    overflow-x: hidden; /*page can somehow be scrolled horizontally, so should hide it*/
+    caret-color: transparent /*removes blinking text cursor*/
+}
+/*header for navigation and logo*/
+header{
+    color: white;
+    background-color: black;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+/*styling "logo" inside header*/
+header > p{
+    font-family: "Lexend", sans-serif;
+    margin: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    display: inline;
+}
+/*arrange the links horizontally*/
+header > ul{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
+    align-items: center;
+}
+/*removes the bullets*/
+header > ul > li{
+    display: inline;
+}
+/*container for all other content*/
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.2rem solid dimgray;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    width: 42vw;
+    margin: auto;
+    background-color: white;
+    transform: scale(0.9); /*slightly scaling down the calculator*/
+}
+/*footer for additional information*/
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    padding: 0.5rem;
+    position: sticky; /*sticky and top allows the footer to stay at the bottom of the page*/
+    top: 100%;
+}
+/*container for text*/
+.country{
+    font-family: "Lexend", sans-serif;
+    background-color:rgb(70, 70, 70);
+    width: 35vw;
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 0.4rem;
+    color: white;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+/*sections inside the container*/
+.sec{
+    display: block;
+    padding: 2rem;
+}
+/*smaller sections called boxes inside the sections, used for the petrol and liter portions*/
+.box{
+    overflow: hidden;
+    border: 0.2rem solid dimgray;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 1rem;
+    transition: 0.42s;
+}
+/*this makes the boxes bigger when the input is in focus*/
+.box:has(input:focus){
+    transform: scale(1.05);
+}
+/*styling the input bar*/
+.box > input{
+    height: 1.5rem;
+    border-radius: 1rem;
+}
+/*container for the calculate button*/
+.btn{
+    display: flex;
+    justify-content: center;
+}
+/*styling the calculate button*/
+.btn > input{
+    transform: scale(1.75);
+    background-color:silver;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+/*changes button volor when hovered*/
+.btn > input:hover{
+    background-color: darkgray;
+}
+/*aligns all input tags' text to center*/
+input{
+    text-align: center;
+}
+/*styling header 1*/
+h1{
+    font-family: "Lexend", sans-serif;
+    padding: 1rem;
+    background-color: darkgrey;
+    width: 100%;
+    text-align: center;
+}
+/*styling header 2*/
+h2{
+    font-family: "Lexend", sans-serif;
+    padding: 1rem;
+}
+/*styling all links*/
+a{
+    text-decoration: none;
+    color: white;
+}
+/*changes all links' text color when hovered*/
+a:hover{
+    color: darkgray;
+}
+/*container for the p result that will be replaced according to the javascript*/
+.result{
+    margin: 4rem;
+    padding: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: seagreen;
+    color: white;
+    border-radius: 2rem;
+}

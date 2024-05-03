@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head> <!--online fonts from google, external stylesheet and javascript-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script> 
+        <title>Simple Petrol Calculator</title>
+    </head>
+    <body>
+        <header> <!--header for navigation and logo-->
+            <p>Fuel Prices Online</p>
+            <ul>
+                <li><a href="https://www.google.com">Home</a></li>
+                <li><a href="https://www.google.com">About us</a></li>
+                <li><a href="https://www.google.com">Contact us</a></li>
+            </ul>
+        </header>
+        <div class="country"> <!--container for text; for decoration-->
+            <p>Petrol Prices in United Kingdom</p>
+        </div>
+        <main> <!--container for all other content-->
+            <h1>Simple Petrol Calculator</h1>
+            <div class="sec"> <!--section to contain smaller sections/boxes-->
+                <div class="box"> <!--boxes containing content-->
+                    <h2>Petrol Cost</h2> <!--headings for style/information-->
+                    <input id="calcconst" type="number" value="1.72"> <!--input fields with default value-->
+                </div>
+                <div class ="box">
+                    <h2>Liters</h2>
+                    <input id="calcvar" type="number" value="0">
+                </div>
+            </div>
+            <div class="sec">
+                <div class="btn">
+                    <input type="button" onclick="calculate()" value="Calculate"> <!--executes javascript function when button is clicked-->
+                </div>
+                <div class="result">
+                    <p id="result">Your total cost is: £0.00</p> <!--replaces the number according to the javascript function-->
+                </div>
+            </div>
+        </main>
+    <footer><!--footer for additional information-->
+        <p>2024 FuelPricesOnline.com</p>
+    </footer>
+    </body>
+</html>
