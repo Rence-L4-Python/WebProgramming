@@ -8,14 +8,14 @@ body{
     max-width: 100vw; /*max width and min height to make the footer stick to the bottom*/
     min-height: 100vh;
     font-family: "Nunito", sans-serif;
-    background-color: whitesmoke;
+    background-color: rgb(240, 240, 250);
     overflow-x: hidden; /*page can somehow be scrolled horizontally, so should hide it*/
-    caret-color: transparent /*removes blinking text cursor*/
+    caret-color: transparent; /*removes blinking text cursor*/
 }
 /*header for navigation and logo*/
 header{
     color: white;
-    background-color: black;
+    background-color:rgb(0, 0, 65);
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -56,10 +56,13 @@ main{
 /*footer for additional information*/
 footer{
     text-align: center;
-    background-color: black;
+    background-color: rgb(0, 0, 65);
     color: white;
-    width: 100%;
-    padding: 0.5rem;
+    width: 100vw;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: sticky; /*sticky and top allows the footer to stay at the bottom of the page*/
     top: 100%;
 }
