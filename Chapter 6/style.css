@@ -155,3 +155,40 @@ a:hover{
     color: white;
     border-radius: 2rem;
 }
+/*displays all links in a list as inline-block*/
+li > a{
+    display: inline-block;
+}
+/*changing color of home link*/
+li.home > a{
+    color: gold;
+}
+/*changing color of home link when hovered*/
+li.home > a:hover{
+    color: goldenrod;
+}
+/*hidden styled drop down content*/
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: silver;
+    box-shadow: 0rem 0.1rem 0.2rem 0.1rem black;
+    z-index: 1;
+} 
+/*styled text of drop down content*/
+.dropdown-content > a{
+    display: block;
+    padding: 1rem;
+    color: black;
+    border: 0.1rem solid darkgray;
+}
+/*changes color of drop down content when hovered*/
+.dropdown-content > a:hover{
+    background-color: darkgray;
+    padding: 1rem;
+    color: white;
+}
+/*displays content when hovered*/
+.dropdown:hover > .dropdown-content{
+    display: block;
+}
