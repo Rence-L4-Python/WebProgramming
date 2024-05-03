@@ -126,8 +126,8 @@ header > p{
     color:white;
 }
 header > nav{
-    left: 100vw;
-    position: sticky;
+    right: 1rem;
+    position: absolute;
 }
 header > nav li{
     display: inline-block;
