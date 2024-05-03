@@ -2,15 +2,19 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-color: midnightblue;
-    background-image: url("media/bg.jpg");
-    caret-color: transparent;
-    color: black;
-    font-family: "Red Hat Display", sans-serif;
-    font-weight: 400;
-    min-width: 100vw;
-    min-height: 100vh;
+.btn{
+    display: flex;
+}
+.btn > a{
+    background-color: green;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+.btn > a:hover{
+    background-color: darkgreen;
 }
 .container{
     background-color: whitesmoke;
@@ -21,8 +25,71 @@ body{
     margin: 2rem;
     padding: 2rem;
 }
+.container > p{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.container > sub{
+    color: dimgray;
+    display: block;
+}
+.container > sub > a{
+    text-decoration: none;
+}
+.container > ul{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+.container > ul li:hover{
+    font-weight: 700;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.container > ul > li > a{
+    text-decoration: none;
+}
 .container:nth-child(1){
     border-radius: 1rem 4rem 1rem 1rem;
+}
+.container:nth-child(1) > p{
+    width: 35vw;
+}
+.container:nth-child(1) img{
+    box-shadow: 0 0 0.2rem black;
+}
+.container-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    width: 15rem;
+}
+.container-content > img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    box-shadow: 0 0 0.2rem black;
+}
+.home a{
+    color: red;
+    font-weight: 900;
+}
+.home a:hover{
+    color: darkred;
+}
+body{
+    background-color: midnightblue;
+    background-image: url("media/bg.jpg");
+    background-size: cover;
+    caret-color: transparent;
+    color: black;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 400;
+    margin-top: 8rem;
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 footer{
     background-color: black;
@@ -40,7 +107,9 @@ h1{
     font-weight: 900;
 }
 h2{
-    margin-bottom: 2rem;
+    color: navy;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
 }
 header{
     align-items: center;
@@ -48,6 +117,13 @@ header{
     display: flex;
     height: 1rem;
     padding: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+header > p{
+    color:white;
 }
 header > nav{
     left: 100vw;
@@ -75,8 +151,11 @@ hr{
     margin: 2rem;
 }
 main{
+    align-items: center;
     display: flex;
+    justify-content: center;
     margin: 2rem;
+    margin-bottom: 4rem;
 }
 .openingtext{
     display: block;
