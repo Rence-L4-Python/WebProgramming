@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        #text {
+            animation: example 4s infinite;
+            }
+            @keyframes example {
+            from {
+            color: blueviolet;
+            }
+            to {
+            color: pink;
+            }
+            }
+        #text2 {
+            position: relative;
+            animation: example2 3s;
+            animation-fill-mode: forwards;
+            }
+            @keyframes example2 {
+            from {
+            left: 0px;
+            }
+            to {
+            left: 200px;
+            color: blue;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="text">The first one</h1>
+        <div id="text">
+        <p>
+        js makes responsive design easier. JavaScript has
+        become integral to the Internet experience as developers build
+        increased interaction and complexity into their applications.
+        Search engines, ecommerce, content management systems, responsive
+        design, social media and phone apps would not be possible without it.
+        </p>
+        </div>
+        <h1 id="text2">The second one</h1>
+        <div id="text2">
+        <p>
+        js makes responsive design easier. JavaScript has
+        become integral to the Internet experience as developers build
+        increased interaction and complexity into their applications.
+        </p>
+        </div>
+    </body>
+</html>
