@@ -199,11 +199,11 @@ footer{
     color: white;
     display: flex;
     height: 125px;
+    justify-content: space-evenly;
     position: sticky;
     top: 100%;
     width: 1536px;
     z-index: 10;
-    justify-content: space-evenly;
 }
 footer > p{
     width: 1338px;
@@ -242,9 +242,9 @@ main::before{
     z-index: 0;
 }
 nav{
+    align-items: end;
     display: flex;
     flex-direction: column;
-    align-items: end;
     margin: 2rem;
 }
 nav hr{
@@ -260,22 +260,21 @@ nav > ul{
     width: 70%;
 }
 nav > ul > li{
+    align-items: center;
     background-color: orange;
-
+    display: flex;
+    justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 nav > ul > li > a{
     color: black;
-    text-decoration: none;
     font-weight: 900;
     padding: 0.5rem;
-    width: 100%;
     text-align: center;
+    text-decoration: none;
+    width: 100%;
 }
 nav > ul > li > a:hover{
     background-color: darkorange;
