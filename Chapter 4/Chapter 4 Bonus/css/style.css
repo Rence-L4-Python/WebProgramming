@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.card{
+    background-color: white;
+    border-radius: 3rem;
+    box-shadow: 0 0 0.5rem black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.card > h2{
+    align-items: center;
+    background-color: green;
+    bottom: 100%;
+    color: white;
+    display: flex;
+    font-family: "Alata", sans-serif;
+    font-weight: 600;
+    height: 60px;
+    justify-content: center;
+    letter-spacing: 0.2rem;
+    position: sticky;
+    text-align: center;
+}
+.card > img{
+    display: flex;
+    height: 270px;
+    object-fit: cover;
+    width: 400px;
+}
+.cardbtn{
+    display: flex;
+    justify-content: center;
+}
+.cardbtn > button{
+    background-color: whitesmoke;
+    border: 0;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 0.2rem black;
+    color: black;
+    font-family: "Didact Gothic", sans-serif;
+    font-weight: 700;
+    padding: 0.75rem;
+}
+.cardbtn > button:active{
+    transform: scale(0.9); 
+    box-shadow: 0 0 0.5rem black; 
+}
+.cardbtn > button:hover{
+    background-color: lightgray;
+}
+.cardtext-container{
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    justify-content: center;
+    width: 100%;
+}
+.cardtext-container > p{
+    height: 130px;
+    line-height: 2.5rem;
+    margin: 2rem;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 790px;
+    margin: 4rem;
+    width: 1338px;
+}
+.first-container{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    position: absolute;
+    width: 1338px;
+}
+.footer-section{
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.footer-section a{
+    color: lightblue;
+}
+.header-section{
+    color: black;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.header-section a{
+    color: royalblue;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    left: 20px;
+    margin: 2rem;
+    position: absolute;
+    top: 280px;
+    width: 50px;
+}
+.icons > img{
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 0.1rem 0.1rem black;
+    margin-bottom: 0.6rem;
+    margin-top: 0.6rem;
+    padding: 0.2rem;
+}
+.logo{
+    display: flex;
+    margin: 2rem;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+    background-color: white;
+    box-shadow: 0 0 0.2rem black;
+}
+.navbar{
+    align-items: center;
+    background-color: navy;
+    box-shadow: 0 0 0.2rem black;
+    display: flex;
+    height: 30px;
+    margin-bottom: 20px;
+    width: 1338px;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul > li{
+    display: inline;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.navbar ul > li > a{
+    color: white;
+    padding: 0.25rem;
+    text-decoration: none;
+}
+.navbar ul > li::after{
+    content: ">>";
+    margin-left: 1rem;
+}
+.navbar ul > li > a:hover{
+    text-decoration: underline;
+    transition: 0.3s;
+}
+.second-container{
+    display: flex;
+    gap: 69px;
+    height: 600px;
+    justify-content: space-between;
+    position: relative;
+    top: 190px;
+    width: 1338px;
+}
+.text-content{
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 0.2rem black;
+    display: flex;
+    font-size: 1.5rem;
+    height: 100px;
+    justify-content: center;
+    width: 1338px;
+}
+.text-content > h1{
+    font-family: "Alata", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.42rem;
+    word-spacing: 0.42rem;
+}
+body{
+    background-color: black;
+    caret-color: transparent;
+    display: flex;
+    font-family: "Didact Gothic", sans-serif;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+footer{
+    background-color: navy;
+    color: white;
+    display: flex;
+    height: 125px;
+    position: sticky;
+    top: 100%;
+    width: 1536px;
+    z-index: 10;
+    justify-content: space-evenly;
+}
+footer > p{
+    width: 1338px;
+    padding: 2rem;
+}
+header{
+    background-color: whitesmoke;
+    box-shadow: 0 0 0.5rem black;
+    display: flex;
+    flex-direction: column;
+    height: 1080px;
+    width: 384px;
+    z-index: 10;
+}
+li{
+    color: white;
+}
+main{
+    align-items: center;
+    background-color: rgb(250, 250, 255);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 1536px;
+}
+main::before{
+    background: url("media/bg2.jpg");
+    bottom: 0;
+    content: "";
+    filter: blur(0.42rem);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 2rem;
+}
+nav hr{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+nav hr:nth-of-type(2), hr:nth-of-type(3){
+    opacity: 50%;
+}
+nav > ul{
+    width: 70%;
+}
+nav > ul > li{
+    background-color: orange;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 0.5rem;
+    width: 100%;
+    text-align: center;
+}
+nav > ul > li > a:hover{
+    background-color: darkorange;
+    transition: 0.3s;
+}
