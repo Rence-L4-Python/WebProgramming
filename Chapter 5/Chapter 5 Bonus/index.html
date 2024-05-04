@@ -5,21 +5,39 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
+        <script src="javascript/script.js" defer></script>
         <title> SFX Soundboard </title>
     </head>
     <body>
         <main>
             <h1>Audio Sampler</h1>
             <div class="soundboard">
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
-                <button class="audiosample"></button>
+                <button onclick="playAudio('audio/Acumalaka.mp3')" class="audiosample">
+                    Acumalaka
+                </button>
+                <button onclick="playAudio('audio/Ayogima.mp3')" class="audiosample">
+                    Ayogima</button>
+                <button onclick="playAudio('audio/Bonk.mp3')" class="audiosample">
+                    Bonk
+                </button>
+                <button onclick="playAudio('audio/Bruh.mp3')" class="audiosample">
+                    Bruh
+                </button>
+                <button onclick="playAudio('audio/CrowdGasp.mp3')" class="audiosample">
+                    Crowd Gasp
+                </button>
+                <button onclick="playAudio('audio/DJAirhorn.mp3')" class="audiosample">
+                    DJ Airhorn
+                </button>
+                <button onclick="playAudio('audio/TacoBellBong.mp3')" class="audiosample">
+                    Taco Bell Bong
+                </button>
+                <button onclick="playAudio('audio/VineBoom.mp3')" class="audiosample">
+                    Vine Boom
+                </button>
+                <button onclick="playAudio('audio/Wow.mp3')" class="audiosample">
+                    Wow
+                </button>
             </div>
         </main>
     </body>
