@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head> <!--Using online fonts and external stylesheet-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Alata&family=Didact+Gothic&display=swap" rel="stylesheet">
@@ -8,11 +8,11 @@
         <title>My Study Planner</title>
     </head>
     <body>
-        <header>
+        <header> <!--Left header serving as one of two navigation bars, this header is for the "main" navigation bar-->
             <div class="logo">
                 <img src="media/logo.png" width= "200px"; height="200px";>
             </div>
-            <nav>
+            <nav> <!--Manually positioned icons since ::before pseudo element didn't work as well-->
                 <div class="icons">
                     <img src="media/home.svg">
                     <img src="media/courses.svg">
@@ -20,14 +20,14 @@
                     <img src="media/notes.svg">
                     <img src="media/tomato.svg">
                 </div>
-                <ul>
+                <ul> <!--Links-->
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Resources</a></li>
                     <li><a href="#">Notes</a></li>
                     <li><a href="#">Pomodoro Timer</a></li>
                 </ul>
-                <hr>
+                <hr> <!--Additional information in left header to fill up white space-->
                 <div class="header-section">
                     <p>INTERACT: Study Planner, where study notes meet interactivity.</p>
                 </div>
@@ -43,9 +43,9 @@
                     </p>
             </nav>
         </header>
-        <main>
-            <div class="container">
-                <div class="first-container">
+        <main> <!--Main contents of web page-->
+            <div class="container"> <!--Wrapper for  elements inside main, used for styling-->
+                <div class="first-container"> <!--Container for mini navigation bar and heading-->
                     <div class="navbar">
                         <ul>
                             <li><a href="#">Home</a></li>
@@ -59,7 +59,7 @@
                         <h1>Web Development Study Plan</h1>
                     </div>
                 </div>
-                <div class="second-container">
+                <div class="second-container"> <!--Container for cards-->
                     <div class="card">
                         <h2>HTML</h2>
                         <img src="media/html.jpg">
@@ -92,8 +92,8 @@
                     </div>
                 </div>
             </div>
-            <footer>
-                <div class="footer-section">
+            <footer> <!--Footer for additional information-->
+                <div class="footer-section"> <!--Footer sections displayed as flex to allow for even spacing-->
                     <h2>About</h2>
                     <a href="#">About us</a>
                     <a href="#">Contact us</a>
