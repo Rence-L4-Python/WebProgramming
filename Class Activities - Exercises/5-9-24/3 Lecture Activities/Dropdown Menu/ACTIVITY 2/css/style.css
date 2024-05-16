@@ -1,0 +1,33 @@
+body{
+    margin: 100px auto;
+    width: max-content;
+}
+div{
+    border: 4px solid black;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 100px;
+    margin: 25px;
+}
+div#A{
+    border-color: gold;
+    box-shadow: 5px 5px 5px black;
+}
+div#B{
+    border-color: pink;
+    box-shadow: 5px 5px 5px black inset;
+}
+div#C{
+    border-color: green;
+    text-shadow: 5px 5px 1px black;
+    transform: scale(0.9);
+}
+div#D{
+    border-color: cornflowerblue;
+    filter: drop-shadow(5px 5px 1px black);
+    transform: scale(0.95);
+}
+img{
+    height: 400px;
+    width: 400px;
+}
