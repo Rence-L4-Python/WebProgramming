@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false">
+<html lang="en" oncontextmenu="return false"> <!--this is to disable right clicking on the website-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="utf-8"> <!--character encoding for the document-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--version of internet explorer to render the page in-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--helps with responsive design for mobile devices-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--online fonts from google-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link href="css/shared.css" rel="stylesheet">
-        <title>Email</title>
+        <link href="css/shared.css" rel="stylesheet"> <!--link to stylesheet-->
+        <title>Email</title> <!--webpage title-->
     </head>
     <body>
-        <header>
+        <header> <!--header for navigation-->
             <h1>RENCE JOSHUA ABELLANOSA</h1>
             <h2>VISUAL DEVELOPMENT FOR GAMES & FILM</h2>
             <ul>
@@ -21,11 +21,11 @@
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <li class = "dropdown">
-                    <a href="#">Gallery
-                        <span id="dropdownarrow">⌵</span>
+                <li class = "dropdown"> <!--the div inside this dropdown menu will show when this link is hovered on-->
+                    <a href="#">Gallery 
+                        <span id="dropdownarrow">⌵</span> <!--styling text using span-->
                     </a>
-                <div class = "dropdown-content">
+                <div class = "dropdown-content"> <!--content inside dropdown menu-->
                     <a href="personalwork.html">
                         Personal Works
                     </a>
@@ -44,7 +44,7 @@
                         <span id="dropdownarrow">⌵</span>
                     </a>
                 <div class = "dropdown-content">
-                    <a href="#" id="highlight">
+                    <a href="#" id="highlight"> <!--please work with apache server to use-->
                         Email
                     </a>
                     <a href="https://www.artstation.com/renshua0">
@@ -71,9 +71,9 @@
                 </li>
             </ul>
         </header>
-        <main>
-            <div class="form-container">
-                <form action="php/send.php" method="post">
+        <main> <!--middle portion of the page-->
+            <div class="form-container"> <!--container for the form, used for styling-->
+                <form action="php/send.php" method="post"> <!--uses the linked php to process the submitted input in the form-->
                     <input type="text" name="name" id="name" placeholder="Your name">
                     <input type="email" name="email" id="email" placeholder="Your email">
                     <input type="text" name="subject" id="subject" placeholder="Reason for emailing">
@@ -83,7 +83,7 @@
             </div>
         </main>
         <footer>
-            <div class="icons">
+            <div class="icons"> <!--clickable icons that function as shortcuts to different links-->
                 <a href="https://www.artstation.com/renshua0">
                     <img id="iconlinks" src="media/icons/artstation.svg">
                 </a>

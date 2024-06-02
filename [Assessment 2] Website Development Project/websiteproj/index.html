@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false">
+<html lang="en" oncontextmenu="return false"> <!--this is to disable right clicking on the website-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="I'm a budding visual development artist specializing in environments! Currently, I am building my portfolio to include more...">
-        <meta name="author" content="Rence Joshua G. Abellanosa">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="utf-8"> <!--character encoding for the document-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--version of internet explorer to render the page in-->
+        <meta name="description" content="I'm a budding visual development artist specializing in environments! Currently, I am building my portfolio to include more..."> <!--this description is what would show up in the search engine-->
+        <meta name="author" content="Rence Joshua G. Abellanosa"> <!--not really needed-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--helps with responsive design for mobile devices-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--online fonts from google-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/index.css">
-        <script src="javascript/index.js" defer></script>
-        <title>Visual Development Artist | Rence Joshua Abellanosa</title>
+        <link rel="stylesheet" href="css/index.css"> <!--link to stylesheet-->
+        <script src="javascript/index.js" defer></script> <!--link to javascript file for the image slideshow-->
+        <title>Visual Development Artist | Rence Joshua Abellanosa</title> <!--webpage title-->
     </head>
     <body>
-        <header>
+        <header> <!--header for navigation-->
             <h1>RENCE JOSHUA ABELLANOSA</h1>
             <h2>VISUAL DEVELOPMENT FOR GAMES & FILM</h2>
             <ul>
@@ -24,12 +24,12 @@
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <li class = "dropdown">
+                <li class = "dropdown"> <!--the div inside this dropdown menu will show when this link is hovered on-->
                     <a href="#">Gallery
-                        <span id="dropdownarrow">⌵</span>
+                        <span id="dropdownarrow">⌵</span> <!--styling text using span-->
                     </a>
                 <div class = "dropdown-content">
-                    <a href="personalwork.html">
+                    <a href="personalwork.html"> <!--content inside dropdown menu-->
                         Personal Works
                     </a>
                     <a href="concepts.html">
@@ -47,7 +47,7 @@
                         <span id="dropdownarrow">⌵</span>
                     </a>
                 <div class = "dropdown-content">
-                    <a href="email.html">
+                    <a href="email.html"> <!--redirects to the email page, please work with apache server to use-->
                         Email
                     </a>
                     <a href="https://www.artstation.com/renshua0">
@@ -74,10 +74,10 @@
                 </li>
             </ul>
         </header>
-        <main>
-            <div class="landing">
-                <div class="slideshow">
-                    <div class="slides fade">
+        <main> <!--middle portion of the page-->
+            <div class="landing"> <!--container for the slideshow feature-->
+                <div class="slideshow"> <!--slideshow function made in javascript-->
+                    <div class="slides fade"> <!--this class is targeted by the javascript file, also uses the fade animation-->
                     <img src="media/gatorcommunication.PNG">
                     </div>
                     <div class="slides fade">
@@ -86,10 +86,10 @@
                         <div class="slides fade">
                             <img src="media/oln4a.png">
                             </div>
-                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--arrows used for switching between images-->
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
-                <div class="dots">
+                <div class="dots"> <!--dots underneath the image that show which image is active-->
                     <span class="dot"></span>
                     <span class="dot"></span>
                     <span class="dot"></span>
@@ -97,7 +97,7 @@
             </div>
         </main>
         <footer>
-            <div class="icons">
+            <div class="icons"> <!--clickable icons that function as shortcuts to different links-->
                 <a href="https://www.artstation.com/renshua0">
                     <img id="iconlinks" src="media/icons/artstation.svg">
                 </a>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" oncontextmenu="return false">
+<html lang="en" oncontextmenu="return false"> <!--this is to disable right clicking on the website-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <meta charset="utf-8"> <!--character encoding for the document-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--version of internet explorer to render the page in-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--helps with responsive design for mobile devices-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> <!--online fonts from google-->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <link href="css/shared.css" rel="stylesheet">
@@ -12,7 +12,7 @@
         <title>Personal Works</title>
     </head>
     <body>
-        <header>
+        <header> <!--header for navigation-->
             <h1>RENCE JOSHUA ABELLANOSA</h1>
             <h2>VISUAL DEVELOPMENT FOR GAMES & FILM</h2>
             <ul>
@@ -22,12 +22,12 @@
                 <li>
                     <a href="about.html">About</a>
                 </li>
-                <li class = "dropdown">
-                    <a href="#" id="tab-highlight">Gallery
+                <li class = "dropdown"> <!--the div inside this dropdown menu will show when this link is hovered on-->
+                    <a href="#" id="tab-highlight">Gallery 
                         <span id="dropdownarrow">⌵</span>
                     </a>
                 <div class = "dropdown-content">
-                    <a href="#" id="highlight">
+                    <a href="#" id="highlight"> <!--content inside dropdown menu-->
                         Personal Works
                     </a>
                     <a href="concepts.html">
@@ -45,7 +45,7 @@
                         <span id="dropdownarrow">⌵</span>
                     </a>
                 <div class = "dropdown-content">
-                    <a href="email.html">
+                    <a href="email.html"> <!--redirects to the email page, please work with apache server to use-->
                         Email
                     </a>
                     <a href="https://www.artstation.com/renshua0">
@@ -72,9 +72,9 @@
                 </li>
             </ul>
         </header>
-        <main>
-        <div class="gallery-container">
-            <div class="gallery">
+        <main> <!--middle portion of the page-->
+        <div class="gallery-container"> <!--container for the gallery class which is used by the javascript plugin-->
+            <div class="gallery"> <!--class used by the javascript plugin, also styled in css to fit my design-->
                 <a href="media/littlematchgirl.jpg">
                     <img src="media/littlematchgirl.jpg" alt="" title="Frames for 'The Little Match Girl' (2023)">
                 </a>
@@ -100,7 +100,7 @@
         </div>
         </main>
         <footer>
-            <div class="icons">
+            <div class="icons"> <!--clickable icons that function as shortcuts to different links-->
                 <a href="https://www.artstation.com/renshua0">
                     <img id="iconlinks" src="media/icons/artstation.svg">
                 </a>
@@ -118,8 +118,8 @@
                 </a>
             </div>
         </footer>
-        <script src="simplelightbox-master/dist/simple-lightbox.min.js"></script>
-        <script>
+        <script src="simplelightbox-master/dist/simple-lightbox.min.js"></script> <!--linking the javascript plugin-->
+        <script> // activates the plugin
             var gallery = new SimpleLightbox('.gallery a', {})
         </script>
     </body>
